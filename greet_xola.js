@@ -1,14 +1,21 @@
-const chalk = require('chalk');
-const greet = require('./greet');
+// Chalk Greeting
 
-const styledMessage = chalk.bgGreen.black(greet('Xola'));
+// const chalk = require('chalk');
+// //import the greet module that is in the current folder
+// const greet = require('./greet');
 
-console.log(styledMessage);
+// const styledMessage = chalk.bgGreen.black(greet('Xola'));
+// console.log(styledMessage);
 
 
+// Text with Figlet
 var figlet = require('figlet');
- 
-figlet(greet('Michael Davids'), function(err, data) {
+
+figlet.text('Michael', {
+    font: 'Ghost',
+    horizontalLayout: 'default',
+    verticalLayout: 'default'
+}, function(err, data) {
     if (err) {
         console.log('Something went wrong...');
         console.dir(err);

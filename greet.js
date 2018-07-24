@@ -1,3 +1,3 @@
-module.exports = function greet(name){
+module.exports = function(name){
   	return ("Hello, " + name);
 }
